@@ -4,32 +4,52 @@
 <html>
 	<head>
 	
+		<!--Meta data-->
 		<meta charset="utf-8" />
 		<meta name="keywords" content="list, to do, errands"/>
 		<meta name="description" content="Form for Honey Do input"/>
 		<meta name="robots" content="noindex, nofollow"/>
 		<meta name="viewport" content="width=device-width"/>
 		
+		<!--Page title-->
 		<title>Honey Do</title>
 		
 	</head>
+	
 	<body>
 	
 		<h1>Honey Do</h1>
 		<p>Keep track of domestic assignments</p>
 		<h2>Get something done</h2>
-		<form action="form_action.asp" method ="get">
-			Name your task:<input type="text" id="taskName" /><br/>	
-			Where is it?
-			<select>
-				<optgroup label="Location">
-					<option>Home</option>
-					<option>Car</option>
-					<option>Errand</option>
-				</optgroup>
-			</select>
-			<input type="submit" value="Submit"/><br/><br/>
+		<!--Form data-->
+		<form action="#" method ="get">
+			<fieldset>
+				<legend>Honey Do:</legend>
+				Task name:<input type="text" id="taskName" /><br/>	
+				Location:<select>
+							<option value="home">Home</option>
+							<option value="car">Car</option>
+							<option value="errand">Errand</option>
+						</select><br/>
+				Due date:<input type="date" name="dueDate"/><br/>
+				Importance:<input type="range" name="importance" min="1" max="10" /><br/>
+				Priority:<br/>
+				<input type="radio" name="priority" id="low" />
+				<label for="low">Because you love me</label>
+				<br/>
+				<input type="radio" name="priority" id="medium" />
+				<label for="medium">I've already asked you once</label>
+				<br/>
+				<input type="radio" name="priority" id="high" />
+				<label for="high">You are in trouble</label>
+				<br/>
+				<input type="hidden" name="honey" value="Him" />
+				<br/>
+				<textarea rows="3" cols="30">Please include any special instructions to ensure that the highest level of satisfaction is achieved.</textarea><br/>
+				<input type="submit" value="Submit"/><br/>				
+			</fieldset>
 		</form>
+		<br/>
 		<a href = "#">Clear stored data</a> 
 		<a href="#">Display data</a>
 		
