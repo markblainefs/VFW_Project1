@@ -19,26 +19,32 @@
 	<body>
 	
 		<header>
-		<h1>Honey Do</h1>
+			<h1>Honey Do</h1>
 		</header>
 		<!--Form data-->
 		<form action="#" method ="post">
 			<fieldset>
 				<legend>Honey Do:</legend>
+				<!--Text input-->
 				<label for="taskName">Task name:</label><input type="text" id="taskName" /><br/><br/>
+				<!--Dropdown input-->
 				<label for="location">Location:</label>
 				<select id="location">
-							<option value="home">Home</option>
-							<option value="car">Car</option>
-							<option value="errand">Errand</option>
-						</select><br/><br/>
+					<option value="home">Home</option>
+					<option value="car">Car</option>
+					<option value="errand">Errand</option>
+					</select><br/><br/>
+				<!--Date input-->
 				<label for="dueDate">Due date:</label><input type="date" id="dueDate" /><br/><br/>
+				<!--Range input-->
 				<label for="importance">Importance:</label><input type="range" id="importance" min="1" max="10" /><br/><br/>
+				<!--Radio input-->
 				Priority:<br/>
 				<input type="radio" checked name="priority" id="low" /><label for="low"> Because you love me</label><br/>
 				<input type="radio" name="priority" id="medium" /><label for="medium"> I've already asked you once</label><br/>
 				<input type="radio" name="priority" id="high" /><label for="high"> You are in trouble</label><br/>
 				<input type="hidden" name="honey" value="Him" /><br/>
+				<!--Textare input-->
 				<label for="specialInstructions">How to not mess up:</label><br/>
 				<textarea id=specialInstructions></textarea><br/>
 			</fieldset>
